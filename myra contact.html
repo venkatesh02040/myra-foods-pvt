@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myra Foods | Order form</title>
+    <link rel="icon"href="./DALL·E 2024-08-31 13.04.39 - A vintage-style logo for 'Myra Foods'. The logo should feature classic typography with a slightly worn, retro look. Incorporate elements like wheat st.webp">
+</head>
+<body>
+    <h1>Myra foods Order Form</h1>
+    <form action="https://httpbin.org/post" method="POST" target="_blank">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="address">Delivery Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+
+        <!-- Food Selection -->
+        <fieldset>
+            <legend>Select Your Food</legend>
+            <label for="Dosa">Dosa:</label>
+            <select id="Dosa" name="Dosa">
+                <option value="-select-">-select-</option>
+                <option value="Onion Dosa">Onion Dosa</option>
+                <option value="Masala Dosa">Masala Dosa</option>
+                <option value="Rava Dosa">Rava Dosa</option>
+                <option value="Pesara Dosa">Pesara Dosa</option>
+            </select><br><br>
+
+            <label for="Other tiffins">Other tiffins:</label>
+            <select id="Other tiffins" name="Other tiffins">
+                <option value="-select-">-select-</option>
+                <option value="Idly">Idly</option>
+                <option value="Vada">Vada</option>
+                <option value="Mysore bonda">Mysore bonda</option>
+                <option value="Chapati">Chapati</option>
+                <option value="Uthapam">Uthapam</option>
+            </select><br><br>
+
+        
+            <label for="drink">Drink:</label><br>
+            <input type="radio" id="water" name="drink" value="water">
+            <label for="water">Water</label><br>
+            <input type="radio" id="tea" name="drink" value="tea">
+            <label for="tea">Tea</label><br>
+            <input type="radio" id="coffee" name="drink" value="coffee">
+            <label for="coffee">Coffee</label><br>
+            <input type="radio" id="juice" name="drink" value="juice">
+            <label for="juice">Juice</label><br>
+            <input type="radio" id="soda" name="drink" value="soda">
+            <label for="soda">Soda</label><br>
+            
+
+        </fieldset>
+
+        <!-- Order Details -->
+        <fieldset>
+            <legend>Order Details</legend>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+
+            <label for="notes">Additional Notes:</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+</html>
